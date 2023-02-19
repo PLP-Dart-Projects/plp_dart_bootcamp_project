@@ -15,7 +15,7 @@ class _LayoutState extends State<Layout> {
   final GlobalKey<ScaffoldState> _scaffoldState = GlobalKey<ScaffoldState>();
   int _currentScreen = 0;
   List screens = const [
-    Text('Dashboard'),
+    Center(child: Text('Dashboard')),
     Notifications(),
     User(),
   ];
