@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:plpdartbootcampproject/screens/notifications.dart';
 import 'package:plpdartbootcampproject/screens/user.dart';
 import 'package:plpdartbootcampproject/utilities/color.dart';
-import 'package:plpdartbootcampproject/widgets/notification_list.dart';
 
 class Layout extends StatefulWidget {
   const Layout({super.key});
@@ -16,7 +16,7 @@ class _LayoutState extends State<Layout> {
   int _currentScreen = 0;
   List screens = const [
     Text('Dashboard'),
-    NotificationList(),
+    Notifications(),
     User(),
   ];
 
