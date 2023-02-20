@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:plpdartbootcampproject/utilities/color.dart';
+import 'package:plpdartbootcampproject/widgets/button.dart';
 import 'package:plpdartbootcampproject/widgets/page_layout.dart';
 
 class RepayLoan extends StatelessWidget {
-  const RepayLoan({super.key});
-
+  RepayLoan({super.key});
+  final amountController = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    final amountController = TextEditingController();
     return PageLayout(
       pageTitle: "Repay Loan",
       body: Column(
@@ -33,6 +33,10 @@ class RepayLoan extends StatelessWidget {
               controller: amountController,
               textAlignVertical: TextAlignVertical.bottom,
               decoration: const InputDecoration(
+                hintText: "KES 0.00",
+                hintStyle: TextStyle(
+                  fontSize: 17,
+                ),
                 suffixText: 'KES',
                 suffixStyle: TextStyle(
                   color: AppColors.primary,
@@ -41,6 +45,29 @@ class RepayLoan extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(
+            height: 20,
+          ),
+          const Text(
+            'To',
+            style: TextStyle(
+              color: AppColors.primary,
+              fontSize: 15,
+            ),
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          const Text(
+            'Repaying KES 1,500,000 loan: Group 1',
+            style: TextStyle(
+              fontSize: 15,
+            ),
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          LargeButton(color: AppColors.primary, text: "Pay")
         ],
       ),
     );
