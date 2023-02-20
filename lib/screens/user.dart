@@ -35,7 +35,7 @@ class User extends StatelessWidget {
         // Text(
         //   'Personal Details:',
         //   style: TextStyle(
-        //     fontSize: 17.sp,
+        //     fontSize: 17,
         //     color: AppColor.dark,
         //     fontWeight: FontWeight.bold,
         //   ),
