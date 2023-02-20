@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:plpdartbootcampproject/widgets/page_layout.dart';
 
-class RepayLoad extends StatelessWidget {
-  const RepayLoad({super.key});
+class RepayLoan extends StatelessWidget {
+  const RepayLoan({super.key});
 
   @override
   Widget build(BuildContext context) {

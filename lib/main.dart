@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:plpdartbootcampproject/screens/repay_load.dart';
+import 'package:plpdartbootcampproject/screens/repay_loan.dart';
 import 'package:plpdartbootcampproject/widgets/layout.dart';
 
 void main() {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Layout(),
+      home: const RepayLoan(),
     );
   }
 }
