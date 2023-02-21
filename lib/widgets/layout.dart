@@ -6,7 +6,12 @@ import 'package:plpdartbootcampproject/screens/user.dart';
 import 'package:plpdartbootcampproject/utilities/color.dart';
 
 class Layout extends StatefulWidget {
-  const Layout({super.key});
+  String? title;
+
+  Layout({
+    super.key,
+    this.title,
+  });
 
   @override
   State<Layout> createState() => _LayoutState();
@@ -33,6 +38,7 @@ class _LayoutState extends State<Layout> {
       extendBody: true,
       resizeToAvoidBottomInset: false,
       key: _scaffoldState,
+      // appBar: AppBar(),
       body: Container(
         padding: const EdgeInsets.only(),
         child: screens[_currentScreen],
@@ -55,6 +61,13 @@ class _LayoutState extends State<Layout> {
             label: 'User',
           ),
         ],
+      ),
+      drawer: const Drawer(
+        child: Text("Hello, Drawer"),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.plus_one),
       ),
     );
   }

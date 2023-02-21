@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:plpdartbootcampproject/utilities/color.dart';
+import 'package:plpdartbootcampproject/widgets/app_header.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
@@ -9,25 +11,11 @@ class DashboardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        DecoratedBox(
-          decoration: BoxDecoration(
-            color: Colors.blue,
-            borderRadius: BorderRadius.only(
-              bottomLeft: Radius.circular(100),
-              bottomRight: Radius.circular(100),
-            ),
-          ),
-          child: Row(
-            children: [
-              Expanded(
-                child: Container(
-                  height: 270,
-                  child: Text("Hello World"),
-                ),
-              ),
-            ],
-          ),
+        AppHeader(
+          title: "Good Evening Mark!",
         ),
+        Text("Balance Widget"),
+        Text("Callout Widget"),
       ],
     );
   }
