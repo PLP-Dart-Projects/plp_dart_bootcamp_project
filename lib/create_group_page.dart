@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:plpdartbootcampproject/group_form.dart';
+import 'package:plpdartbootcampproject/notifications.dart';
 
 class CreateGroupPage extends StatefulWidget {
   @override
@@ -56,6 +57,13 @@ class _CreateGroupPageState extends State<CreateGroupPage> {
                             leading: Icon(Icons.monetization_on),
                             title: Text("Savings"),
                             onTap: () {},
+                          ),
+                          ListTile(
+                            leading: Icon(Icons.notifications),
+                            title: Text("Notifications"),
+                            onTap: () {
+                              Navigator.of(context).push(MaterialPageRoute(builder: (context) => NotificationPage()));
+                            },
                           )
 
                         ]
