@@ -44,42 +44,40 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBoiCcrYKxmVPfRXW00ZzofH0Xq7ifFfXA',
-    appId: '1:174376549785:web:069e265dc1887edc2ae708',
-    messagingSenderId: '174376549785',
-    projectId: 'habit-374505',
-    authDomain: 'habit-374505.firebaseapp.com',
-    storageBucket: 'habit-374505.appspot.com',
-    measurementId: 'G-0CVHKBY648',
+    apiKey: 'AIzaSyAeIPzGp-q-eZo-JJOkmebg_VJVWGJaMQM',
+    appId: '1:1081085881894:web:61ff2ef9d6951fa9a0c0e7',
+    messagingSenderId: '1081085881894',
+    projectId: 'plp-dart-bootcamp-project',
+    authDomain: 'plp-dart-bootcamp-project.firebaseapp.com',
+    storageBucket: 'plp-dart-bootcamp-project.appspot.com',
+    measurementId: 'G-LBDLNXBRF1',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDQXapomtcjBRGhulcDe-MXeCfXtoEg2d8',
-    appId: '1:174376549785:android:f5973afaef71e6602ae708',
-    messagingSenderId: '174376549785',
-    projectId: 'habit-374505',
-    storageBucket: 'habit-374505.appspot.com',
+    apiKey: 'AIzaSyBUrU8VvGY553SHCrFooe-9av6ygok1tww',
+    appId: '1:1081085881894:android:5cd45a5f90239e20a0c0e7',
+    messagingSenderId: '1081085881894',
+    projectId: 'plp-dart-bootcamp-project',
+    storageBucket: 'plp-dart-bootcamp-project.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAnYZuT4HLMT3Dv1sRzEC7z1pmBkr0BbA4',
-    appId: '1:174376549785:ios:7058e477ea8a2afc2ae708',
-    messagingSenderId: '174376549785',
-    projectId: 'habit-374505',
-    storageBucket: 'habit-374505.appspot.com',
-    androidClientId: '174376549785-c0hgghvp9429tu4oagvcklofp57qh9ji.apps.googleusercontent.com',
-    iosClientId: '174376549785-4ti6crfm73upqeemf2nh279hbjtn0i7s.apps.googleusercontent.com',
-    iosBundleId: 'com.example.habitTrackerPlp',
+    apiKey: 'AIzaSyBcO_m0YznrAXQQzBPR-zJB77y48LORWrM',
+    appId: '1:1081085881894:ios:7778ddaac602bb1ba0c0e7',
+    messagingSenderId: '1081085881894',
+    projectId: 'plp-dart-bootcamp-project',
+    storageBucket: 'plp-dart-bootcamp-project.appspot.com',
+    iosClientId: '1081085881894-gfaion9ffv8gaf9tlss3cpaiumtmf7bf.apps.googleusercontent.com',
+    iosBundleId: 'com.adeelsafdar.loginsignup.loginSignup',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAnYZuT4HLMT3Dv1sRzEC7z1pmBkr0BbA4',
-    appId: '1:174376549785:ios:7058e477ea8a2afc2ae708',
-    messagingSenderId: '174376549785',
-    projectId: 'habit-374505',
-    storageBucket: 'habit-374505.appspot.com',
-    androidClientId: '174376549785-c0hgghvp9429tu4oagvcklofp57qh9ji.apps.googleusercontent.com',
-    iosClientId: '174376549785-4ti6crfm73upqeemf2nh279hbjtn0i7s.apps.googleusercontent.com',
-    iosBundleId: 'com.example.habitTrackerPlp',
+    apiKey: 'AIzaSyBcO_m0YznrAXQQzBPR-zJB77y48LORWrM',
+    appId: '1:1081085881894:ios:7778ddaac602bb1ba0c0e7',
+    messagingSenderId: '1081085881894',
+    projectId: 'plp-dart-bootcamp-project',
+    storageBucket: 'plp-dart-bootcamp-project.appspot.com',
+    iosClientId: '1081085881894-gfaion9ffv8gaf9tlss3cpaiumtmf7bf.apps.googleusercontent.com',
+    iosBundleId: 'com.adeelsafdar.loginsignup.loginSignup',
   );
 }

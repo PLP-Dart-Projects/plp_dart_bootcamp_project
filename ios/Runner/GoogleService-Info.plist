@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1081085881894-gfaion9ffv8gaf9tlss3cpaiumtmf7bf.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1081085881894-gfaion9ffv8gaf9tlss3cpaiumtmf7bf</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBcO_m0YznrAXQQzBPR-zJB77y48LORWrM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1081085881894</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.adeelsafdar.loginsignup.loginSignup</string>
+	<key>PROJECT_ID</key>
+	<string>plp-dart-bootcamp-project</string>
+	<key>STORAGE_BUCKET</key>
+	<string>plp-dart-bootcamp-project.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1081085881894:ios:7778ddaac602bb1ba0c0e7</string>
+</dict>
+</plist>
