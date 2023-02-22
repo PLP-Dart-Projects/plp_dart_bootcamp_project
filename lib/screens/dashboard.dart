@@ -67,13 +67,19 @@ class DashboardScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  SizedBox(
-                    width: 150,
-                    child: Text(
-                      "Check your Groups",
-                      style: TextStyle(
-                        color: AppColors.white,
-                        fontSize: 20,
+                  GestureDetector(
+                    //@Lackson, please check this ontap method and advice me on how to implement it - Eric
+                    onTap: () {
+                      Navigator.pushNamed(context, "/create_group");
+                    },
+                    child: SizedBox(
+                      width: 150,
+                      child: Text(
+                        "Check your Groups",
+                        style: TextStyle(
+                          color: AppColors.white,
+                          fontSize: 20,
+                        ),
                       ),
                     ),
                   ),
