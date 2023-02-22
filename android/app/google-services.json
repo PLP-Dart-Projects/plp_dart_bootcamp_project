@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1081085881894",
+    "project_id": "plp-dart-bootcamp-project",
+    "storage_bucket": "plp-dart-bootcamp-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081085881894:android:aec82e5e8f827286a0c0e7",
+        "android_client_info": {
+          "package_name": "com.example.plpdartbootcampproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1081085881894-e0ghgvdnnfm7pf2vtnno620aasmuid3r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUrU8VvGY553SHCrFooe-9av6ygok1tww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1081085881894-e0ghgvdnnfm7pf2vtnno620aasmuid3r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
