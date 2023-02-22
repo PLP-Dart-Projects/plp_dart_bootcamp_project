@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+
+=======
 import 'package:plpdartbootcampproject/group_form.dart';
+
 
 class CreateGroupPage extends StatefulWidget {
   @override
@@ -7,6 +10,9 @@ class CreateGroupPage extends StatefulWidget {
 }
 
 class _CreateGroupPageState extends State<CreateGroupPage> {
+
+=======
+
 
   @override
   Widget build(BuildContext context) {
@@ -63,9 +69,6 @@ class _CreateGroupPageState extends State<CreateGroupPage> {
                   ),
                   body: GroupForm(),
                 ),
-
-
-
               ),
 
             ],

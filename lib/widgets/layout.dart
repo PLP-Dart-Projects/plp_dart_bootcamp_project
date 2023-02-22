@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:plpdartbootcampproject/screens/dashboard.dart';
 import 'package:plpdartbootcampproject/screens/notifications.dart';
 import 'package:plpdartbootcampproject/screens/user.dart';
 import 'package:plpdartbootcampproject/utilities/color.dart';
 
 class Layout extends StatefulWidget {
-  const Layout({super.key});
+  String? title;
+
+  Layout({
+    super.key,
+    this.title,
+  });
 
   @override
   State<Layout> createState() => _LayoutState();
@@ -15,7 +21,7 @@ class _LayoutState extends State<Layout> {
   final GlobalKey<ScaffoldState> _scaffoldState = GlobalKey<ScaffoldState>();
   int _currentScreen = 0;
   List screens = const [
-    Center(child: Text('Dashboard')),
+    DashboardScreen(),
     Notifications(),
     User(),
   ];
@@ -32,12 +38,9 @@ class _LayoutState extends State<Layout> {
       extendBody: true,
       resizeToAvoidBottomInset: false,
       key: _scaffoldState,
+      // appBar: AppBar(),
       body: Container(
-        padding: const EdgeInsets.only(
-          left: 20,
-          right: 20,
-          top: 60,
-        ),
+        padding: const EdgeInsets.only(),
         child: screens[_currentScreen],
       ),
       bottomNavigationBar: BottomNavigationBar(

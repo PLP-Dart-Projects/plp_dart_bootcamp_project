@@ -22,12 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-
       home: CreateGroupPage(),
-    );
-  }
-}
-      home: const Layout(),
     );
   }
 }
