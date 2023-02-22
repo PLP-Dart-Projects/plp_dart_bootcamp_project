@@ -10,11 +10,25 @@ class DashboardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         AppHeader(
           title: "Good Evening Mark!",
         ),
-        Text("Balance Widget"),
+        Container(
+          margin: EdgeInsets.symmetric(
+            vertical: 30,
+          ),
+          padding: EdgeInsets.symmetric(
+            horizontal: 15,
+          ),
+          child: Card(
+            child: Container(
+              padding: EdgeInsets.all(30),
+              child: Text("Balance Widget"),
+            ),
+          ),
+        ),
         Text("Callout Widget"),
       ],
     );
