@@ -12,6 +12,8 @@ class NotificationList extends StatelessWidget {
           return Container(
             padding: const EdgeInsets.only(
               bottom: 10,
+              left: 15,
+              right: 15,
             ),
             margin: const EdgeInsets.only(
               bottom: 20,
@@ -46,28 +48,30 @@ class NotificationList extends StatelessWidget {
                     ),
                   ),
                 ),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
-                    Text(
-                      'Group 1',
-                      style: TextStyle(
-                        color: AppColors.textDefault,
-                        fontWeight: FontWeight.bold,
+                Expanded(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: const [
+                      Text(
+                        'Group 1',
+                        style: TextStyle(
+                          color: AppColors.textDefault,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Text(
-                      'This is an example of a notification mess...',
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Text('2 hours ago'),
-                  ],
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Text(
+                        'This is an example of a notification mess...',
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Text('2 hours ago'),
+                    ],
+                  ),
                 ),
                 const Icon(
                   Icons.arrow_forward_ios_outlined,
