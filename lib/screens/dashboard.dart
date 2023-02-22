@@ -23,13 +23,72 @@ class DashboardScreen extends StatelessWidget {
             horizontal: 15,
           ),
           child: Card(
+            elevation: 10,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(40),
+            ),
             child: Container(
-              padding: EdgeInsets.all(30),
-              child: Text("Balance Widget"),
+              padding: EdgeInsets.symmetric(horizontal: 30, vertical: 50),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Your Total Balance",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w300,
+                    ),
+                  ),
+                  SizedBox(height: 10),
+                  Text(
+                    "KES 8500.00",
+                    style: TextStyle(
+                      color: AppColors.primaryShade1,
+                      fontSize: 30,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ),
-        Text("Callout Widget"),
+        Container(
+          margin: EdgeInsets.symmetric(horizontal: 15),
+          child: Card(
+            color: AppColors.primary,
+            elevation: 0,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(40),
+            ),
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 30, vertical: 50),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  SizedBox(
+                    width: 150,
+                    child: Text(
+                      "Check your Groups",
+                      style: TextStyle(
+                        color: AppColors.white,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.chevron_right,
+                      color: AppColors.white,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
       ],
     );
   }

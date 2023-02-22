@@ -62,13 +62,6 @@ class _LayoutState extends State<Layout> {
           ),
         ],
       ),
-      drawer: const Drawer(
-        child: Text("Hello, Drawer"),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Icon(Icons.plus_one),
-      ),
     );
   }
 }
