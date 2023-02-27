@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_database/firebase_database.dart';
 import 'package:http/http.dart' as http;
+
+FirebaseDatabase database = FirebaseDatabase.instance;
 
 class GroupForm extends StatefulWidget {
   const GroupForm({Key? key}) : super(key: key);
@@ -22,15 +25,16 @@ class _GroupFormState extends State<GroupForm> {
   }
 
   Future<void> _createGroup() async {
-    final response = await http.post(
-      Uri.parse('your-api-endpoint-here'),
-      body: {
-        'groupName': _groupNameController.text,
-        'interestRate': _interestRateController.text,
-        'interestType': _isSimpleInterest ? 'simple' : 'compound',
-        'startDate': _startDate.toString(),
-      },
-    );
+   database.ref().set(
+       {
+         'groupName': _groupNameController.text,
+         'interestRate': _interestRateController.text,
+         'interestType': _isSimpleInterest ? 'simple' : 'compound',
+         'startDate': _startDate.toString(),
+       }
+   );
+
+
     // handle the response here
   }
 
